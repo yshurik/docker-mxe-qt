@@ -1,0 +1,9 @@
+FROM yshurik/mxe-qt:gcc7
+MAINTAINER yshurik <yshurik@gmail.com>
+
+ENV PATH "/mxe/usr/bin:/mxe/usr/x86_64-w64-mingw32.shared/qt5:/mxe/usr/x86_64-w64-mingw32.shared/qt5/bin:/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+ENV PKG_CONFIG "/mxe/usr/bin/x86_64-w64-mingw32.shared-pkg-config"
+
+ENV mxedir "/mxe/"
+

@@ -1,0 +1,11 @@
+FROM yshurik/mxe-qt:gcc7.posix
+MAINTAINER yshurik <yshurik@gmail.com>
+
+ENV PATH "/mxe/usr/bin:/mxe/usr/x86_64-w64-mingw32.shared.posix/qt5:/mxe/usr/x86_64-w64-mingw32.shared.posix/qt5/bin:/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+RUN ls -l /mxe/usr/bin/
+ENV PKG_CONFIG "/mxe/usr/bin/x86_64-w64-mingw32.shared.posix-pkg-config"
+
+ENV mxedir "/mxe/"
+RUN qmake -v
+
